@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <style>
+        body {
+            font-family: helvetica, sans-serif;
+            color: #F4F3F5;
+            padding: 20px;
+            background-color: #2F3740;
+        }
+
+        h1 {
+            color: #77D5E8;
+            text-align: center;
+            font-family: helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        a:link, a:visited {
+            color: #61BFD4;
+        }
+
+        a:hover, a:active {
+            color: #77D5E8;
+        }
+
+        #main_container {
+
+            max-width: 600px;
+            background-color: #293037;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+        }
+
+        #footer {
+            max-width: 600px;
+            color: #727172;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #footer p {
+            font-size: 12px;
+        }
+
+        #footer a:link, #footer a:visited {
+            color: #9B9A9B;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="main_container">
+            <h1>##GREETING##</h1>
+            <p>This is a simple example of how you can use the Sendkit content engine to inject recipient data as well as construct rule based content, so called <i>conditional includes</i>.</p>
+            <p>The greeting above is such an include and depends on the language of the recipient. Below in the footer the email of the recipient is used as well as the special <i>unsubscribe_url</i> variable which is replaced by a URL that can be used for unsubscribing.</p>
+            <p>For more information on this topic see the <a href="https://sendkit.com/app.html#doc/Template%20Language">Mail Template Language</a> section of the documentation.</p>
+        </div>
+        <div id="footer">
+            <p>This mail was sent to $$email$$, you can <a href="$$unsubscribe_url$$">unsubscribe</a> if you do not want receive any further mails.</p>
+        </div>
+    </body>
+</html>

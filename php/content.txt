@@ -1,0 +1,13 @@
+##GREETING##
+
+This is a simple example of how you can use the Sendkit content engine to inject recipient data as well as construct rule based content, so called conditional includes.
+
+The greeting above is such an include and depends on the language of the recipient. Below in the footer the email of the recipient is used as well as the special unsubscribe_url-variable which is replaced by a URL that can be used for unsubscribing.
+
+For more information on this topic see the Mail Template Language section of the documentation.
+
+Link: https://sendkit.com/app.html#doc/Template%20Language
+
+This mail was sent to $$email$$, you can click the link below if you do not want receive any further mails.
+
+$$unsubscribe_url$$
